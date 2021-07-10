@@ -44,5 +44,12 @@ class MyTestCase(unittest.TestCase):
                                    float(row[StaticVariable.result]))
             self.assertAlmostEqual(self.Calculator.result, float(row[StaticVariable.result]))
 
+        # Test for Square
+    def test_square(self):
+        test_sq_data = CsvReader(StaticVariable.TestSquare).data
+        for row in test_sq_data:
+            self.assertAlmostEqual(self.Calculator.sq(row[StaticVariable.value1]), float(row[StaticVariable.result]))
+            self.assertAlmostEqual(self.Calculator.result, float(row[StaticVariable.result]))
+
 if __name__ == '__main__':
     unittest.main()
