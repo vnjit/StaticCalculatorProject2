@@ -1,0 +1,1 @@
+# StaticCalculatorProject2
