@@ -28,6 +28,13 @@ class MyTestCase(unittest.TestCase):
                              int(row[StaticVariable.result]))
             self.assertEqual(self.Calculator.result, int(row[StaticVariable.result]))
 
+        # Test for Multiplication
+    def test_multiplication(self):
+        test_multiple_data = CsvReader(StaticVariable.TestMultiplication).data
+        for row in test_multiple_data:
+            self.assertEqual(self.Calculator.multiple(row[StaticVariable.value1], row[StaticVariable.value2]),
+                             int(row[StaticVariable.result]))
+            self.assertEqual(self.Calculator.result, int(row[StaticVariable.result]))
 
 if __name__ == '__main__':
     unittest.main()
