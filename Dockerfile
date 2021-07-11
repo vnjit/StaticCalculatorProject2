@@ -1,6 +1,6 @@
-FROM python:3
+FROM python:3.7
 
-ADD src /src
+ADD . .
 
 RUN pip install --upgrade pip
 
