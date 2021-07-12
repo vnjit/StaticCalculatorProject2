@@ -2,7 +2,7 @@ from src.Calculator.Addition import addition
 from src.Calculator.Division import division
 
 
-def get_mean(data):
+def get_median(data):
     num_values = len(data)
     if num_values % 2 == 0:
         value = int(division(2, num_values))
