@@ -17,26 +17,26 @@ class Calculator:
         return self.result
 
     # Subtraction
-    def sub(self, a, b):
+    def subtract(self, a, b):
         self.result = subtraction(a, b)
         return self.result
 
     # Multiplication
-    def multiple(self, a, b):
+    def multiply(self, a, b):
         self.result = multiplication(a, b)
         return self.result
 
     # Division
-    def div(self, a, b):
+    def divide(self, a, b):
         self.result = division(a, b)
         return self.result
 
     # Square
-    def sq(self, a):
+    def square(self, a):
         self.result = square(a)
         return self.result
 
     # SquareRoot
-    def sqrt(self, a):
+    def squareroot(self, a):
         self.result = squareRoot(a)
         return self.result
