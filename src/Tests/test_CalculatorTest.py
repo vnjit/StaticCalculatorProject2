@@ -1,7 +1,7 @@
 import unittest
 from src.Calculator.Calculator import Calculator
 from src.CsvReader.CsvReader import CsvReader
-from src.StaticProperties.StaticVariable import StaticVariable
+from src.StaticProperties.StaticVariable import S_Variable
 
 class MyTestCase(unittest.TestCase):
 
@@ -14,49 +14,49 @@ class MyTestCase(unittest.TestCase):
         # Test for Addition
 
     def test_addition(self):
-        test_add_data = CsvReader(StaticVariable.TestAddition).data
-        for row in test_add_data:
-            self.assertEqual(self.Calculator.add(row[StaticVariable.value1], row[StaticVariable.value2]),
-                             int(row[StaticVariable.result]))
-            self.assertEqual(self.Calculator.result, int(row[StaticVariable.result]))
+        test_addition_data = CsvReader(S_Variable.Test_Addition).data
+        for row in test_addition_data:
+            self.assertEqual(self.Calculator.add(row[S_Variable.value1], row[S_Variable.value2]),
+                             int(row[S_Variable.result]))
+            self.assertEqual(self.Calculator.result, int(row[S_Variable.result]))
 
         # Test for Subtraction
     def test_subtraction(self):
-        test_sub_data = CsvReader(StaticVariable.TestSubtraction).data
-        for row in test_sub_data:
-            self.assertEqual(self.Calculator.sub(row[StaticVariable.value1], row[StaticVariable.value2]),
-                             int(row[StaticVariable.result]))
-            self.assertEqual(self.Calculator.result, int(row[StaticVariable.result]))
+        test_subtraction_data = CsvReader(S_Variable.Test_Subtraction).data
+        for row in test_subtraction_data:
+            self.assertEqual(self.Calculator.subtract(row[S_Variable.value1], row[S_Variable.value2]),
+                             int(row[S_Variable.result]))
+            self.assertEqual(self.Calculator.result, int(row[S_Variable.result]))
 
         # Test for Multiplication
     def test_multiplication(self):
-        test_multiple_data = CsvReader(StaticVariable.TestMultiplication).data
-        for row in test_multiple_data:
-            self.assertEqual(self.Calculator.multiple(row[StaticVariable.value1], row[StaticVariable.value2]),
-                             int(row[StaticVariable.result]))
-            self.assertEqual(self.Calculator.result, int(row[StaticVariable.result]))
+        test_multiplication_data = CsvReader(S_Variable.Test_Multiplication).data
+        for row in test_multiplication_data:
+            self.assertEqual(self.Calculator.multiply(row[S_Variable.value1], row[S_Variable.value2]),
+                             int(row[S_Variable.result]))
+            self.assertEqual(self.Calculator.result, int(row[S_Variable.result]))
 
         # Test for Division
     def test_division(self):
-        test_div_data = CsvReader(StaticVariable.TestDivision).data
-        for row in test_div_data:
-            self.assertAlmostEqual(self.Calculator.div(row[StaticVariable.value1], row[StaticVariable.value2]),
-                                   float(row[StaticVariable.result]))
-            self.assertAlmostEqual(self.Calculator.result, float(row[StaticVariable.result]))
+        test_division_data = CsvReader(S_Variable.Test_Division).data
+        for row in test_division_data:
+            self.assertAlmostEqual(self.Calculator.divide(row[S_Variable.value1], row[S_Variable.value2]),
+                                   float(row[S_Variable.result]))
+            self.assertAlmostEqual(self.Calculator.result, float(row[S_Variable.result]))
 
         # Test for Square
     def test_square(self):
-        test_sq_data = CsvReader(StaticVariable.TestSquare).data
-        for row in test_sq_data:
-            self.assertAlmostEqual(self.Calculator.sq(row[StaticVariable.value1]), float(row[StaticVariable.result]))
-            self.assertAlmostEqual(self.Calculator.result, float(row[StaticVariable.result]))
+        test_square_data = CsvReader(S_Variable.Test_Square).data
+        for row in test_square_data:
+            self.assertAlmostEqual(self.Calculator.square(row[S_Variable.value1]), float(row[S_Variable.result]))
+            self.assertAlmostEqual(self.Calculator.result, float(row[S_Variable.result]))
 
         # Test for SquareRoot
     def test_squareRoot(self):
-        test_sqrt_data = CsvReader(StaticVariable.TestSquareRoot).data
-        for row in test_sqrt_data:
-            self.assertAlmostEqual(self.Calculator.sqrt(row[StaticVariable.value1]), float(row[StaticVariable.result]))
-            self.assertAlmostEqual(self.Calculator.result, float(row[StaticVariable.result]))
+        test_squareRoot_data = CsvReader(S_Variable.Test_SquareRoot).data
+        for row in test_squareRoot_data:
+            self.assertAlmostEqual(self.Calculator.squareroot(row[S_Variable.value1]), float(row[S_Variable.result]))
+            self.assertAlmostEqual(self.Calculator.result, float(row[S_Variable.result]))
 
 if __name__ == '__main__':
     unittest.main()
