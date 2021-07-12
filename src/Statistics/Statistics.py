@@ -4,7 +4,6 @@ from src.Statistics.Median import get_median
 from src.Statistics.Mode import get_mode
 from src.Statistics.Variance import get_variance
 from src.Statistics.StandardDeviation import get_standard_deviation
-from CsvReader.CsvReader import CsvReader
 
 class Statistics(Calculator):
     data = []
