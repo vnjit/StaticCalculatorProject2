@@ -1,6 +1,6 @@
 from src.Calculator.Calculator import Calculator
 from src.Statistics.Mean import get_mean
-from src.Statistics.Mean import get_median
+from src.Statistics.Median import get_median
 
 
 class Statistics(Calculator):
