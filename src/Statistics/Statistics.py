@@ -3,7 +3,7 @@ from src.Statistics.Mean import get_mean
 from src.Statistics.Median import get_median
 from src.Statistics.Mode import get_mode
 from src.Statistics.Variance import get_variance
-
+from src.Statistics.StandardDeviation import get_standard_deviation
 
 
 class Statistics(Calculator):
@@ -28,3 +28,6 @@ class Statistics(Calculator):
         self.result = get_variance(data)
         return self.result
 
+    def standard_deviation(self, data):
+        self.result = get_standard_deviation(data)
+        return self.result
