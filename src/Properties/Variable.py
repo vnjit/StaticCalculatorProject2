@@ -1,4 +1,4 @@
-# Assign Static variable to Static Text
+
 class S_Variable:
     Test_Addition = "./src/Tests/Data/Addition.csv"
     Test_Subtraction = "./src/Tests/Data/Subtraction.csv"

@@ -5,14 +5,14 @@ from src.Calculator.Division import division
 
 def get_median(data):
     try:
-        num_values = len(data)
+        total = len(data)
         data.sort()
-        if num_values % 2 == 0:
-            value1 = data[int(division(2, num_values))]
-            value2 = data[int(subtraction(division(2, num_values)), 1)]
-            result = division(2, addition(value1, value2))
+        if total % 2 == 0:
+            median1 = data[int(division(2, total))]
+            median2 = data[int(subtraction(division(2, total)), 1)]
+            result = division(2, addition(median1, median2))
         else:
-            result = data[int(division(2, num_values))]
+            result = data[int(division(2, total))]
 
             return result
     except ValueError:

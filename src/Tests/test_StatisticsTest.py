@@ -17,21 +17,21 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_mean_calculator(self):
-        self.assertEqual(self.statistics.mean(self.testData),6.0)
+        self.assertEqual(self.statistics.mean(self.testData),5.0625)
 
     def test_median_calculator(self):
-        self.assertEqual(self.statistics.median(self.testData),6)
+        self.assertEqual(self.statistics.median(self.testData),5)
 
     def test_mode_calculator(self):
-        self.assertEqual(self.statistics.mode(self.testData), [9])
+        self.assertEqual(self.statistics.mode(self.testData), 5)
 
     def test_variance_method(self):
         variance = (var(self.testData))
-        self.assertEqual(self.statistics.variance(self.testData), variance)
+        self.assertEqual(self.statistics.variance(self.testData), 4.125)
 
     def test_standard_deviation(self):
         standard_deviation = (std(self.testData))
-        self.assertAlmostEqual(self.statistics.standard_deviation(self.testData), standard_deviation)
+        self.assertAlmostEqual(self.statistics.standard_deviation(self.testData), 2.0)
 
 
 if __name__ == '__main__':
