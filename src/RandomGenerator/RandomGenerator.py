@@ -6,7 +6,7 @@ from src.RandomGenerator.RGwithListInteger import random_with_list_integer
 from src.RandomGenerator.RGwithListDecimal import random_with_list_decimal
 
 
-class Random:
+class RandomGenerator:
     result = 0
 
 
