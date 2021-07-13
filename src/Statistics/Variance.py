@@ -1,4 +1,4 @@
-from Statistics.Mean import get_mean
+from src.Statistics.Mean import get_mean
 from src.Calculator.Division import division
 from src.Calculator.Addition import addition
 from src.Calculator.Square import square

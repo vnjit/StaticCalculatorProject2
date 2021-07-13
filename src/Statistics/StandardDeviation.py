@@ -1,4 +1,4 @@
-from Statistics.Variance import get_variance
+from src.Statistics.Variance import get_variance
 from src.Calculator.SquareRoot import squareRoot
 
 
