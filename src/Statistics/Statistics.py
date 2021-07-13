@@ -30,5 +30,3 @@ class Statistics(Calculator):
     def standard_deviation(self, data):
         self.result = get_standard_deviation(data)
         return self.result
-
-    pass
