@@ -6,7 +6,7 @@ class S_Variable:
     Test_Division = "./src/Tests/Data/Division.csv"
     Test_Square = "./src/Tests/Data/Square.csv"
     Test_SquareRoot = "./src/Tests/Data/SquareRoot.csv"
-    Test_SquareRoot = "./src/Tests/Data/Static.csv"
+    Test_Static = "./src/Tests/Data/Static.csv"
     value1 = "Value 1"
     value2 = "Value 2"
     result = "Result"

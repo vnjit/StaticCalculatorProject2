@@ -2,12 +2,12 @@ import unittest
 from src.Statistics.Statistics import Statistics
 from src.CsvReader.CsvReader import CsvReader
 from src.Properties.Variable import S_Variable
-from numpy import var, standarddeviation
+from numpy import var, std
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.statistics = Statistics()
-        self.test_stat_data = CsvReader(S_Variable.Test_SquareRoot).data
+        self.test_stat_data = CsvReader(S_Variable.Test_Static).data
         self.testData = [int(row['Value']) for row in self.test_stat_data]
 
     def test_instantiate_calculator(self):
@@ -30,7 +30,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statistics.variance(self.testData), variance)
 
     def test_standard_deviation(self):
-        standard_deviation = (standarddeviation(self.testData))
+        standard_deviation = (std(self.testData))
         self.assertAlmostEqual(self.statistics.standard_deviation(self.testData), standard_deviation)
 
 
